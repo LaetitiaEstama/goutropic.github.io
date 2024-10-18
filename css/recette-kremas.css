@@ -1,0 +1,1365 @@
+/*FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('../asset/fonts/Afacad-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+    width: 100%;
+    max-width: 1140px; 
+    margin: 0 auto; 
+
+}
+body {
+  background-color: #E1CEA8;
+}
+
+
+/*Float Inscription connxion */
+
+.float{
+	position:fixed;
+	width:100px;
+	height:100px;
+	bottom:40px;
+	right:40px;
+	background-color:#4CA9AD;
+	color:#FFF;
+	border-radius:70% 70% 10% 70%;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.float:hover {
+    background-color: #FAB13C;
+}
+
+.float h3 {
+    font-size: x-small;
+}
+
+.float img {
+    width: 55%;
+    height: auto;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+/* Recette description */
+div.recette_description H3 {
+    font-family: 'Dosis', sans-serif;
+    color: #742948;
+
+}
+
+div.recette_description span {
+    font-family: 'Dosis', sans-serif;
+    color: #742948;
+    margin-left: 5%;
+
+}
+
+
+div.recette_description h1 {
+    font-family: 'Belanosima', sans-serif;
+    color: #742948;
+    font-size: 6em;
+    margin-bottom: 0.2em;
+}
+
+div.recette_description h4 {
+    font-family: 'Dosis', sans-serif;
+    color: #742948;
+    font-size: smaller;
+
+}
+
+#informations {
+    display: flex;
+    margin-top: 0em;
+}
+
+
+#informations p {
+    border: #742948 solid;
+    border-radius: 50px;
+    padding: 0.5em;
+    margin: 3%;
+    font-family: 'Dosis', sans-serif;
+    color: #742948;
+}
+.new1 {
+    color: #742948;
+    width: 13%;
+
+    transform: rotate(90deg);
+    /* height: 19%; */
+}
+
+#description_recette {
+    display: flex;
+    margin-top: 3em;
+}
+
+.description_recette_item h4 {
+    font-family: 'Dosis', sans-serif;
+    color: #742948;
+}
+
+.description_recette_item p {
+    font-family: 'Afacad', sans-serif;
+    color: #742948;
+    margin-top: 2%;
+}
+
+#etoile-note {
+    margin-top: 1em;
+}
+/* Navigation */
+
+header {
+    width: 100%;
+    max-width: 1140px; 
+    margin: 0 auto; 
+
+}
+
+div.slogan p {
+    font-family: 'Mohave', sans-serif;
+    color: #742948;
+    font-size: large;
+}
+
+div.slogan {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+div.logo_accueil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.logo_accueil img {
+    width: 6em;
+    height: 6em;
+}
+.navitation {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+nav {
+    background-color: #fff;
+    color: #742948;
+    /* padding: 0 19px 0px; */
+    border-radius: 50px;
+}
+
+       nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: #fff; */
+            height: 75px;
+        }
+        
+
+        .menu_principal {
+            /* margin-right: 20px; */
+            position: relative;
+            PADDING: 15px 42px 15px 42px;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+    
+        
+
+        .titre_navigation {
+            text-decoration: none;
+            color: #742948;
+            /* padding: 10px; */
+            display: block;
+            font-family: 'Dosis', sans-serif;
+            font-size: 1.2em;
+        }
+        
+
+    
+
+        a {
+            text-decoration: none;
+            color: #742948 ;
+            padding: 10px;
+            display: block;
+            font-family: 'Dosis', sans-serif;
+            border: #ff8c00;
+            font-size: large;
+        }
+
+
+        ul.sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50px;
+            background-color: #FAB13C;
+            z-index: 1000;
+            height: auto;
+        }
+
+        li:hover > ul.sub-menu {
+            display: block;
+            white-space: nowrap;
+        }
+
+        a img {
+          margin-left: 7px;
+          width: 18px;
+          height: 18px;
+      
+      }
+
+  
+       .mega-menu {
+        width: 1100px;
+        position: absolute;
+        left: 40%;
+        transform: translateX(-5.5%);
+        top: 100%;
+        display: none;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #FAB13C;
+    }
+
+    li:hover .mega-menu {
+        display: block;
+    }
+
+ 
+    .mega-menu-column {
+        float: left;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .mega-menu-column H3 {
+        font-family: 'Mohave', sans-serif;
+        color: #742948;
+    }
+
+
+    .mega-menu-column a {
+        color: #742948;
+        display: block;
+        margin-bottom: 10px;
+        font-size:large;
+    }
+
+    .mega-menu-column a:hover {
+        background-color: #E1CEA8; 
+    }
+
+
+    .sub-menu a:hover {
+        background-color: #E1CEA8; 
+
+    }
+
+
+
+    .menu_principal:hover {
+        background-color: #742948;
+        cursor: pointer;
+    }
+    
+    .menu_principal:hover .titre_navigation {
+        color: #E1CEA8; 
+    }
+    
+    .menu_principal:hover img {
+        filter: brightness(0) invert(1);
+    }
+
+
+
+
+/* RECETTE SECTION*/
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recette_presentation {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Ajustez selon vos besoins */
+    margin: 20px 0;
+    height: 100vh;
+}
+
+.recette_description {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.recette_background {
+    position: relative;
+    z-index: -2;
+    width: 120%;
+
+    object-fit: cover;
+    top: -50%;
+    left: -16%;
+}
+
+/* titres */
+
+.title-1 h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 2em;
+    color: #01161E;
+}
+
+.title p {
+    font-family: 'Mohave', sans-serif;
+    font-size: large;
+
+}
+div.title-1 img {
+    width: 5%;
+}
+
+div.title-1 {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+/*Liste */
+
+/* GENERAL */
+.Container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  /* CHECKLIST */
+  mark {
+      background-color: transparent;
+      color: #742948;
+      font-family: 'Dosis', sans-serif;
+      font-size: larger;
+  }
+  
+  .checkbox {
+    text-align: left;
+    direction: rtl;
+    position: relative;
+    line-height: 0;
+}
+  .checkbox:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+  }
+  .checkbox input,
+  .checkbox .label,
+  .checkbox .check {
+      display: inline-block;
+      vertical-align: middle;
+  }
+  .checkbox .label {
+      max-width: 200px;
+  }
+  .checkbox .check {
+      position: relative;
+  }
+  .checkbox input[type="checkbox"] {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      cursor: pointer;
+      border-color: #742948;
+  }
+  .checkbox input[type="checkbox"]:focus {
+      outline: 0;
+  }
+  .checkbox input[type="checkbox"]:checked + .check-container .check-off {
+      border-color: #742948;
+  }
+  
+  .checkbox input[type="checkbox"]:checked + .check-container .check-on:after {
+      content: "✓";
+      color: white;
+      position: absolute;
+      font-size: 1em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+  }
+  
+  .checkbox input[type="checkbox"] + .check-container {
+      width: auto;
+      position: relative;
+      display: inline-block;
+      width: 29px;
+      height: 29px;
+      top: 2px;
+      pointer-events: none;
+  }
+  
+  .checkbox input[type="checkbox"] + .check-container .check-off {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0;
+      top: 0;
+      border-radius: 2px;
+      border: 2px solid #742948;
+      transition: border-color ease 0.28s;
+  }
+  
+  .task-list {
+      position: relative;
+      padding: 15px 25px;
+  }
+  .task-list mark {
+      display: inline-block;
+      margin-bottom: 3px;
+  }
+  .task-list time {
+      font-weight: 300;
+      font-size: 12px;
+  }
+  
+  .task-list ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .task-list ul li {
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      padding: 15px 0;
+      position: relative;
+      margin: 0;
+  }
+  .task-list ul li .label {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    margin-bottom: 2px;
+    line-height: 1.2;
+    direction: ltr;
+    text-align: left;
+    opacity: 1;
+    max-width: unset;
+    margin-left: 2em;
+}
+  
+  .task-list ul li.task-checked .label {
+      opacity: 0.5;
+  }
+  
+
+  
+  .task-list.current ul li:first-child {
+      border-top: 0;
+  }
+
+
+
+
+
+
+  mark {
+      background-color: transparent;
+      color: #742948;
+      font-family: 'Dosis', sans-serif;
+      font-size: larger;
+  }
+  
+  .checkbox {
+    text-align: left;
+    direction: rtl;
+    position: relative;
+    line-height: 0;
+}
+  .checkbox:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+  }
+  .checkbox input,
+  .checkbox .label,
+  .checkbox .check {
+      display: inline-block;
+      vertical-align: middle;
+  }
+  .checkbox .label {
+      max-width: 200px;
+  }
+  .checkbox .check {
+      position: relative;
+  }
+  .checkbox input[type="checkbox"] {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      cursor: pointer;
+      border-color: #742948;
+  }
+  .checkbox input[type="checkbox"]:focus {
+      outline: 0;
+  }
+  .checkbox input[type="checkbox"]:checked + .check-container .check-off {
+      border-color: #742948;
+  }
+  
+  .checkbox input[type="checkbox"]:checked + .check-container .check-on:after {
+      content: "✓";
+      color: white;
+      position: absolute;
+      font-size: 1em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+  }
+  
+  .checkbox input[type="checkbox"] + .check-container {
+      width: auto;
+      position: relative;
+      display: inline-block;
+      width: 29px;
+      height: 29px;
+      top: 2px;
+      pointer-events: none;
+  }
+  
+  .checkbox input[type="checkbox"] + .check-container .check-off {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 0;
+      top: 0;
+      border-radius: 2px;
+      border: 2px solid #742948;
+      transition: border-color ease 0.28s;
+  }
+  
+  .task-list {
+      position: relative;
+      padding: 15px 25px;
+  }
+  .task-list mark {
+      display: inline-block;
+      margin-bottom: 3px;
+  }
+  .task-list time {
+      font-weight: 300;
+      font-size: 12px;
+  }
+  
+  .task-list ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .task-list ul li {
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      padding: 15px 0;
+      position: relative;
+      margin: 0;
+  }
+  .task-list ul li .label {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    margin-bottom: 2px;
+    line-height: 1.2;
+    direction: ltr;
+    text-align: left;
+    opacity: 1;
+    max-width: unset;
+    margin-left: 2em;
+}
+  
+  .task-list ul li.task-checked .label {
+      opacity: 0.5;
+  }
+  
+
+  
+  .task-list.current ul li:first-child {
+      border-top: 0;
+  }
+
+  #fond {
+    background-image: url(../asset/recettes/fond_etape.png);
+    background-size: cover;
+    height: 183vh;
+}
+
+#preparation   {
+    background-image: url('../asset/recettes/fond_etape.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200vh;
+    position: relative; /* Ajoutez cette ligne */
+    z-index: -1; /
+
+}
+
+div.note {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+div.note h4 {
+    font-family: 'Mohave', sans-serif;
+    color: #742948;
+}
+
+div.merci {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+div.merci h1{
+    font-family: 'Belanosima', sans-serif;
+    color: #742948;
+}
+
+div.liens_autres {
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 10em;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.liens_autres a {
+    font-size: 1.5em;
+}
+div.liens_autres img {
+    width: 1EM;
+    height: 1EM;
+}
+.liens:hover {
+    text-decoration: underline;
+}
+#point {
+   width: 3em;
+   height: 3em; 
+}
+
+
+
+/* Card recettes */
+
+.title h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 2em;
+    color: #742948;
+}
+
+.title p {
+    font-family: 'Mohave', sans-serif;
+    font-size: large;
+
+}
+div.title img {
+    width: 5%;
+}
+
+div.title {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+
+.slide-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+  }
+  
+
+
+  .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 2em;
+  }
+  
+  
+  
+  .clash-card {
+    background: #742948;
+    width: 350px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 27px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+
+}
+
+  .clash-card__image {
+    position: relative;
+    height: 230px;
+    margin-bottom: 2em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .clash-card__image {
+    background-color: #E1CEA8;}
+
+    #kremas_img {
+        width: 440px;
+        position: absolute;
+        top: -83px;
+        left: -17px;
+        width: 3;
+        height: auto;
+    }
+
+    #bol_soupe_joumou_img {
+        width: 444px;
+        position: absolute;
+        top: -46px;
+        left: -90px;
+        height: auto;
+    }
+
+
+    #diri_djondjon_img {
+        width: 431px;
+        position: absolute;
+        top: -76px;
+        left: -77px;
+        height: auto;
+    } 
+    
+
+.clash-card__unit-description {
+    color: #E1CEA8;
+    text-align: left;
+}
+
+.clash-card__unit-name {
+    font-size: 26px;
+    color: #E1CEA8;
+    font-weight: 900;
+    margin-bottom: 6px;
+    margin-top: 2em;
+    font-family: 'Belanosima', sans-serif;
+    text-align: left;
+}
+    .voir_plus-bouton {
+        top: 34px;
+        position: relative;
+        width: 3em;
+        height: auto;
+    }
+  hr {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .annotations {
+    display: flex;
+    color: #E1CEA8;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+
+div.annotations img {
+    width:  142px;
+    height: auto;
+}
+
+.liens {
+    color: #742948;
+}
+
+.liens:hover {
+    text-decoration: underline;
+}
+
+.clash-card {
+
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .clash-card:hover {
+    transform: scale(1.05); 
+
+  }
+
+
+  /* Flèche scroll up*/
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 11px;
+    right: 15px;
+    background-color: #742948;
+    color: #E1CEA8;
+    font-size: 18px;
+    width: 74px;
+    height: 74px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex !important;
+    Z-INDEX: 9999999999;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 3px 6px 11px rgba(0, 0, 0, 4.2);
+}
+
+.scroll-to-top:hover {
+    background-color: #FAB13C;
+}
+
+  /* FOOTER */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#infolettre {
+    position: relative;
+    background-size: contain;
+    color: white;
+    text-align: center;
+    padding: 136px 0;
+    background-attachment: fixed;
+    height: 8em;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+}
+
+#infolettreImg2 {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+
+#infolettreImg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px; 
+    height: auto;
+    z-index: 1; 
+}
+
+#infolettre h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Belanosima', sans-serif;
+    color: #742948;
+}
+
+#infolettre p {
+    color: #01161E;
+    font-family: 'Mohave', sans-serif;
+}
+
+#inputContainer input::placeholder {
+    color:#742948;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+
+#inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#inputContainer {
+    display: flex;
+    align-items: center;
+    width: 220px;
+
+
+}
+
+#emailInput {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 50px;
+    width: 333px;
+    height: 1.5em;
+    border-color: #fff;
+    height: 1.7em;
+}
+
+#degustezBtn {
+    background-color: #742948;
+    color: #E1CEA8;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: -121px;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+
+
+
+
+
+#logoSection {
+    background: url('../asset/footer/palmier_fond.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 5em;
+    margin-top: 3em;
+}
+
+#logo {
+    max-width: 20%;
+    height: auto;
+}
+
+#logo:hover {
+    transform: scale(1.04); 
+    filter: brightness(0) invert(1); 
+
+  }
+
+#socialLogos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.socialLogo {
+    margin: 0 10px;
+    max-width: 51px;
+    height: auto;
+    width: 36px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+  
+  .socialLogo:hover {
+    transform: scale(1.4); 
+    filter: brightness(0) invert(1);
+
+  }
+
+
+#footerLinks {
+    margin-top: 20px;
+    DISPLAY: flex;
+    ALIGN-ITEMS: center;
+    JUSTIFY-CONTENT: center;
+}
+
+#footerLinks a:hover {
+    transform: scale(1.4); 
+    color: #01161E;
+
+  }
+
+#logo_footer IMG {
+    width: 40%;
+    height: auto;
+}
+
+
+#rightsReserved {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 1em;
+    font-family: 'Dosis', sans-serif;
+    color: #01161E;
+}
+
+ /* Media */
+ 
+  @media screen and (max-width: 900px) {
+      main {
+          width: 900px;
+          max-width: 1140px;
+          margin: 0 auto;
+      }
+      .menu_principal {
+          position: relative;
+          PADDING: 15px 42px 15px 42px;
+          border-radius: 50px;
+          /* background-color: white; */
+      }
+      
+      .menu_principal {
+          position: relative;
+          PADDING: 15px 42px 15px 42px;
+          border-radius: 50px;
+          /* background-color: white; */
+      }
+      
+      .mega-menu {
+          width: 836px;
+          position: absolute;
+          left: 40%;
+          transform: translateX(-5.5%);
+          top: 100%;
+          display: none;
+          padding: 20px;
+          box-sizing: border-box;
+          background-color: #FAB13C;
+      }
+      
+      ul.sub-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 6px;
+          background-color: #FAB13C;
+          z-index: 1000;
+          height: auto;
+      }
+    
+      div.slogan p {
+          font-family: 'Mohave', sans-serif;
+          color: #742948;
+          font-size: larger;
+      }
+    
+     nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: flex-start;
+          height: 75px;
+          width: 500px;
+          flex-direction: row;
+          background-color: white;
+      }
+      
+      
+    
+      nav {
+        background-color: #fff;
+        color: #742948;
+        border-radius: 50px;
+        margin-bottom: 22em;
+    }
+      
+      
+      
+      /*contenue */
+    
+    
+    
+      nav {
+          background-color: #fff;
+          color: #742948;
+          border-radius: 50px;
+          margin-bottom: 3em;
+      }
+      
+      .recette_background {
+          position: relative;
+          z-index: -2;
+          width: 120%;
+          object-fit: cover;
+          top: -5%;
+          left: -16%;
+      }
+      
+      div.title-1 {
+          margin-top: 2em;
+          margin-bottom: 4em;
+          display: flex;
+          align-content: center;
+          align-items: center;
+          margin-left: 5%;
+          WIDTH: 900px;
+      }
+      
+      .Container {
+          max-width: 1140px;
+          margin: 0 auto;
+          width: 900px;
+      }
+      /*FOOTER*/
+      
+      #infolettreImg2 {
+          position: absolute;
+          top: 121px;
+          left: 0;
+          width: 100%;
+          height: auto;
+          z-index: 0;
+      }
+    
+      #infolettreImg {
+          position: absolute;
+          top: 30px;
+          left: 46%;
+          transform: translateX(-50%);
+          width: 100%;
+          max-width: 700px;
+          height: auto;
+          z-index: 1;
+      }
+      
+      
+      
+      footer {
+          display: flex;
+          flex-direction: column;
+          width: 900px;
+      }
+    }
+    
+    
+    
+    
+    @media only screen and (max-width: 500px) {
+      main {
+          width: 500px;
+          max-width: 1140px;
+          margin: 0 auto;
+      }
+    
+      .mega-menu {
+          width: 429px;
+          position: absolute;
+          left: -35%;
+          transform: translateX(-5.5%);
+          top: 100%;
+          display: none;
+          padding: 20px;
+          box-sizing: border-box;
+          background-color: #FAB13C;
+          Z-INDEX: 99;
+      }
+    
+      ul.sub-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: -59px;
+          background-color: #FAB13C;
+          z-index: 1000;
+          height: auto;
+          WIDTH: 338px;
+      }
+    
+    
+     nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 75px;
+          flex-direction: column;
+      }
+    
+  
+  
+      /*Contenus*/
+  
+      .Container {
+          width: 1140px;
+          margin: 0 auto;
+          width: 500px;
+      }
+      #recette_presentation {
+          display: flex;
+          width: 100%;
+          max-width: 1200px;
+          margin: 16EM;
+          /* height: 127vh; */
+          /* width: 500px; */
+          flex-direction: column;
+          MARGIN-BOTTOM: 40em;
+      }
+      
+      #fond {
+          background-image: url(../asset/recettes/fond_etape.png);
+          background-size: cover;
+          height: 316vh;
+          width: 500px;
+      }
+      
+      div.liens_autres {
+          display: flex;
+          margin-top: 3em;
+          margin-bottom: 10em;
+          align-content: center;
+          justify-content: flex-start;
+          align-items: center;
+          width: 500px;
+      }
+      div.title {
+          margin-top: 2em;
+          margin-bottom: 4em;
+          display: flex;
+          align-content: center;
+          align-items: center;
+          margin-left: 5%;
+          width: 500px;
+      }
+      
+      .float {
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          /* bottom: 40px; */
+          /* right: 40px; */
+          background-color: #4CA9AD;
+          color: #FFF;
+          border-radius: 70% 70% 10% 70%;
+          text-align: center;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 1000;
+      }
+      div.title-1 {
+          margin-top: 2em;
+          margin-bottom: 4em;
+          display: flex;
+          align-content: center;
+          align-items: center;
+          margin-left: 5%;
+          width: 500px;
+      }
+      
+      .slide-container {
+          max-width: 1140px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+      }
+      div.title-1 {
+          margin-top: 2em;
+          margin-bottom: 4em;
+          display: flex;
+          align-content: center;
+          align-items: center;
+          margin-left: 5%;
+      }
+      
+      .task-list {
+          position: relative;
+          padding: 15px 25px;
+      }
+      
+      .recette_background {
+          position: relative;
+          z-index: -5;
+          width: 107%;
+          object-fit: cover;
+          top: -2%;
+          left: -16%;
+      }
+      .recette_description {
+          flex: 1;
+          padding: 20px;
+          box-sizing: border-box;
+          /* margin-bottom: -3em; */
+          width: 500px;
+      }
+    
+          /*footer*/
+      
+          footer {
+              display: flex;
+              flex-direction: column;
+              width: 500px;
+          }
+    }
+    
+    
+  
